@@ -122,6 +122,16 @@ jobs:
           git -C source apply --check ../on-device-cart-studio.patch
           git -C source apply ../on-device-cart-studio.patch
 
+      - name: Add solid and clear glitter finishes
+        env:
+          GLITTER_FINISH_PATCH: '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'
+        run: |
+          set -eu
+          printf '%s' "$GLITTER_FINISH_PATCH" | base64 --decode | gzip -dc > glitter-finishes.patch
+          echo 'a1360c557f48e034e0d9996bb2d4f7d4a2d9a394ee257b9faf750133fe37b916  glitter-finishes.patch' | sha256sum -c -
+          git -C source apply --check ../glitter-finishes.patch
+          git -C source apply ../glitter-finishes.patch
+
       - name: Format, device checks and offline tests
         working-directory: source
         run: |
@@ -212,7 +222,11 @@ jobs:
           Controls is now in Settings. Existing artwork and browser shell
           exports are read as before. Handheld overrides are stored per
           system in Labels/cart_shell.txt.
+          Finish offers Solid, Clear, Clear Glitter, and Solid Glitter.
+          Existing glitter entries still use Clear Glitter. Solid Glitter
+          is saved as solid-glitter and renders opaque plastic with flecks.
           EOF
+          cp ../glitter-finishes.patch ../output/
           cp ../on-device-cart-studio.patch ../output/
           cp ../snes-studio-shells.patch ../output/
           cp ../game-boy-studio-shells.patch ../output/
@@ -225,6 +239,6 @@ jobs:
 
       - uses: actions/upload-artifact@v7
         with:
-          name: omega-zero-plus-on-device-cart-studio
+          name: omega-zero-plus-cart-studio-glitter
           path: output/
           if-no-files-found: error
