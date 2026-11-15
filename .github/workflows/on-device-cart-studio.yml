@@ -156,6 +156,16 @@ jobs:
           echo '29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031  source/crates/omega-ui/assets/Inter.ttf' | sha256sum -c -
           echo '5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57  source/crates/omega-ui/assets/Inter-OFL.txt' | sha256sum -c -
 
+      - name: Sharpen Modern UI and remove shelf titles
+        env:
+          MODERN_CLEANUP_PATCH: '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'
+        run: |
+          set -eu
+          printf '%s' "$MODERN_CLEANUP_PATCH" | base64 --decode | gzip -dc > modern-cleanup.patch
+          echo '545270baede7502ea4a20bc25a72862c7d64b865a9ae9ad9c893fe5b1cdd700b  modern-cleanup.patch' | sha256sum -c -
+          git -C source apply --check ../modern-cleanup.patch
+          git -C source apply ../modern-cleanup.patch
+
       - name: Format, device checks and offline tests
         working-directory: source
         run: |
@@ -276,6 +286,7 @@ jobs:
           Classic Omega to use the classic backdrop and font options.
           Modern uses Inter, distributed under the SIL Open Font License.
           EOF
+          cp ../modern-cleanup.patch ../output/
           cp ../modern-theme.patch ../output/
           cp ../gamebit-cart-studio.patch ../output/
           cp ../glitter-finishes.patch ../output/
@@ -291,6 +302,6 @@ jobs:
 
       - uses: actions/upload-artifact@v7
         with:
-          name: omega-zero-plus-modern-theme
+          name: omega-zero-plus-modern-cleanup
           path: output/
           if-no-files-found: error
